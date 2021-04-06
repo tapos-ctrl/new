@@ -4,6 +4,7 @@ import "firebase/auth";
 import firebaseConfig from './firbase.config';
 import {UserContext} from '../../App';
 import { useHistory, useLocation } from 'react-router';
+import '../Login/Login.css';
 
 
 const Login = () => {
@@ -55,9 +56,12 @@ const Login = () => {
 
 
     return (
-        <div>
-            <h1>This is Login</h1>
+        <div className="container">
+            <div className="singin-btn">
+            <h1>This google Login</h1>
             <button onClick={handleGoogleSignIn}>Google SignIn</button>
+            </div>
+            
         </div>
     );
 };

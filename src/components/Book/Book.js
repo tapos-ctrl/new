@@ -47,37 +47,11 @@ const Book = () => {
 
     <div style={{ textAlign: 'center' }}>
       <h1>Hello, {loggedInUser.name} Let's book a {bedType} Room.</h1>
-      <p>Want a <Link to="/login">different room?</Link> </p>
+      <h1>Name:{bedType}</h1>
+ 
 
       <MuiPickersUtilsProvider utils={DateFnsUtils}>
-        <Grid container justify="space-around">
-          <KeyboardDatePicker
-            disableToolbar
-            variant="inline"
-            format="MM/dd/yyyy"
-            margin="normal"
-            id="date-picker-inline"
-            label="Check In Date"
-            value={selectedDate.checkIn}
-            onChange={handleCheckingDate}
-            KeyboardButtonProps={{
-              'aria-label': 'change date',
-            }}
-          />
-
-          
-          <KeyboardDatePicker
-            margin="normal"
-            id="date-picker-dialog"
-            label="Check Out Date"
-            format="MM/dd/yyyy"
-            value={selectedDate.checkOut}
-            onChange={handleCheckOutDate}
-            KeyboardButtonProps={{
-              'aria-label': 'change date',
-            }}
-          />
-        </Grid>
+        
         <Button onClick={handleBooking} variant="contained" color="primary">Add Now</Button>
       </MuiPickersUtilsProvider>
 

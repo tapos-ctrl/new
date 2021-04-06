@@ -1,0 +1,12 @@
+.singin-btn{
+    text-align:center;
+}
+
+.singin-btn button{
+    width:300px;
+    margin-top: 30px;
+    padding:8px;
+    border-radius: 30px;
+    border: none;
+    background-color: aqua;
+}
